@@ -66,11 +66,11 @@ relevante).
 
 | Categoría que se quiere distinguir | N° de casos disponibles |
 |---|---|
-| Bocina | ~10 (de 50 objetivo)) |
-| Alarma | ~10 (de 50 objetivo)) |
-| Detector de humo | ~10 (de 50 objetivo) |
-| Timbre | ~10 (de 50 objetivo)) |
-| Ruido de fondo | ~10 (de 50 objetivo) |
+| Bocina | 10 (de 50 objetivo)) |
+| Alarma | 10 (de 50 objetivo)) |
+| Detector de humo | 10 (de 50 objetivo) |
+| Timbre | 10 (de 50 objetivo)) |
+| Ruido de fondo | 10 (de 50 objetivo) |
 
 > **Nota (Nivel A3):** la referencia mínima de la plantilla es ~50 audios por categoría en Teachable Machine. El equipo ya descargó 10 audios reales de cada una de las 5 categorías (20% del objetivo por clase), lo cual verifica el acceso real a las fuentes identificadas (Freesound, Pixabay Audio, grabación propia) con un volumen inicial ya considerable. El resto (hasta 50 por clase) se termina de recolectar durante la Fase M (Semanas 7-11), antes de entrenar el modelo definitivo. Como el proyecto se comprometió a reentrenar el modelo con datos nuevos tras la primera prueba, el equipo debe planificar una segunda ronda de recolección después de la Semana 8-9, enfocada en los casos donde el primer modelo se equivoque (por ejemplo, confusión entre timbre y ruido de fondo). 
 
