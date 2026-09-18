@@ -5,11 +5,9 @@
 ---
 
 **Equipo:**
-- Integrante 1: _______________________________________________
-- Integrante 2: _______________________________________________
-- Integrante 3: _______________________________________________
-- Integrante 4 *(si aplica)*: ___________________________________
-- Integrante 5 *(si aplica)*: ___________________________________
+- Integrante 1: Diego Requena Falero
+- Integrante 2: Harold Inca Tenorio
+- Integrante 3: Jeniffer Patiño Landa
 
 **Fecha de entrega:** _______________
 **Tipo de IA del proyecto:** Combinación — Clasificación de audio, Nivel A3 (analítico, con reentrenamiento y medición de mejora) + capa de lenguaje G1 que traduce el resultado en alerta (generativo)
