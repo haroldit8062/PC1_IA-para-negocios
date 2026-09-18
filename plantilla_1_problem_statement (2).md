@@ -69,6 +69,17 @@ genera riesgos de seguridad y pérdida de autonomía en su vida diaria.
 | ¿Necesitas tanto predecir como explicar, comunicar o actuar? | SÍ | Se predice la categoría de sonido y luego se comunica como alerta al usuario. |
 
 ---
+**¿Qué va a predecir, clasificar o agrupar?**
+
+> ¿Por qué la IA es la respuesta correcta y no otra solución más simple?
+```
+La IA es necesaria porque el problema implica reconocer patrones
+acústicos variables (distinto volumen, tono o entorno) que no pueden
+cubrirse con reglas fijas tipo "si el sonido supera tantos decibeles".
+Además, se necesita una capa de lenguaje que traduzca ese resultado
+técnico en un mensaje entendible para el usuario, algo que una hoja de
+cálculo o un sistema de reglas simples no puede ofrecer por sí solo.
+```
 
 ## SECCIÓN 3 — Los dos componentes del producto
 
