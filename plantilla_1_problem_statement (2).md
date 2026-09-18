@@ -113,7 +113,7 @@ el micrófono: alarma, detector_humo, timbre, bocina, o ruido_de_fondo
 **¿Qué comunica, decide o ejecuta?**
 ```
 Traduce la clase de sonido detectada y su nivel de confianza en un
-mensaje de alerta claro para el usuario (ej. "🔥 Alarma de incendio
+mensaje de alerta claro para el usuario (ej. "Alarma de incendio
 detectada" o "No se detectó ningún sonido relevante"). No decide
 acciones ni consulta información externa — solo redacta el mensaje
 según una tabla fija de 5 categorías ya definida por el equipo.
