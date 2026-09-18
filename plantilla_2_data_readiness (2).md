@@ -66,13 +66,15 @@ relevante).
 
 | Categoría que se quiere distinguir | N° de casos disponibles |
 |---|---|
-| Bocina | ~50 (pendiente de completar, ver Sección 3) |
-| Alarma | ~50 (pendiente de completar) |
-| Detector de humo | ~50 (pendiente de completar) |
-| Timbre | ~50 (pendiente de completar) |
-| Ruido de fondo | ~50 (pendiente de completar) |
+| Bocina | ~10 (de 50 objetivo)) |
+| Alarma | ~10 (de 50 objetivo)) |
+| Detector de humo | ~10 (de 50 objetivo) |
+| Timbre | ~10 (de 50 objetivo)) |
+| Ruido de fondo | ~10 (de 50 objetivo) |
 
-> **Nota (Nivel A3):** como el proyecto se comprometió a reentrenar el modelo con datos nuevos tras la primera prueba (Plantilla 1, Sección 3.4), el equipo debe planificar una **segunda ronda de recolección** después de la Semana 8-9, enfocada en los casos donde el primer modelo se equivoque (por ejemplo, confusión entre timbre y ruido de fondo). Esta segunda ronda no necesita ser tan grande como la primera — basta con ~15-20 muestras adicionales por clase problemática.
+> **Nota (Nivel A3):** la referencia mínima de la plantilla es ~50 audios por categoría en Teachable Machine. El equipo ya descargó 10 audios reales de cada una de las 5 categorías (20% del objetivo por clase), lo cual verifica el acceso real a las fuentes identificadas (Freesound, Pixabay Audio, grabación propia) con un volumen inicial ya considerable. El resto (hasta 50 por clase) se termina de recolectar durante la Fase M (Semanas 7-11), antes de entrenar el modelo definitivo.
+
+Como el proyecto se comprometió a reentrenar el modelo con datos nuevos tras la primera prueba, el equipo debe planificar una segunda ronda de recolección después de la Semana 8-9, enfocada en los casos donde el primer modelo se equivoque (por ejemplo, confusión entre timbre y ruido de fondo).** 
 
 **Revisión de fuga de datos (obligatoria):**
 
@@ -109,7 +111,7 @@ mensaje de "no estoy seguro" en vez de forzar una alerta.
 | Dimensión | Semáforo | Evidencia que respalda la evaluación | Plan de acción (si es 🟡 o 🔴) |
 |---|---|---|---|
 | **Disponibilidad** | 🟢 | Se verificó que Freesound y Pixabay Audio tienen clips de bocina, alarma, detector de humo y timbre, de acceso gratuito. | — |
-| **Volumen** | 🟡 | Las fuentes existen, pero el equipo aún no ha descargado/grabado las ~50 muestras por clase que exige la referencia mínima. | Ver Bloqueante 1, Sección 3. |
+| **Volumen** | 🟡 | 	El equipo ya descargó 10 audios reales por cada una de las 5 categorías (20% del objetivo), verificando que las fuentes son accesibles y el formato funciona. Falta completar hasta las ~50 muestras por clase, lo cual se hará en la Fase M antes de entrenar | Ver Bloqueante 1, Sección 3. |
 | **Calidad** | 🟡 | Algunos clips de bancos gratuitos pueden traer música de librería de fondo, lo que podría confundir al modelo. | Revisar cada clip antes de usarlo y descartar los que tengan sonidos superpuestos. |
 | **Relevancia** | 🟢 | Los 4 sonidos objetivo corresponden exactamente a los definidos como críticos en la Fase P (Plantilla 1). | — |
 | **Legalidad** | 🟡 | Freesound y Zapsplat usan licencias variadas (algunas requieren atribución); no se ha revisado clip por clip. | Ver Bloqueante 2, Sección 3. |
