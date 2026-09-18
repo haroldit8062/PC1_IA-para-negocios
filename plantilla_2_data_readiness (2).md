@@ -72,9 +72,7 @@ relevante).
 | Timbre | ~50 (pendiente de completar) |
 | Ruido de fondo | ~50 (pendiente de completar) |
 
-> **Nota:** la referencia mínima de la plantilla es ~50 audios por categoría en Teachable Machine. Actualmente el equipo tiene identificadas las fuentes pero **no ha completado la recolección real** — este es el principal punto pendiente de la Fase R (ver Sección 3).
->
-> **Nota adicional (Nivel A3):** como el proyecto se comprometió a reentrenar el modelo con datos nuevos tras la primera prueba (Plantilla 1, Sección 3.4), el equipo debe planificar una **segunda ronda de recolección** después de la Semana 8-9, enfocada en los casos donde el primer modelo se equivoque (por ejemplo, confusión entre timbre y ruido de fondo). Esta segunda ronda no necesita ser tan grande como la primera — basta con ~15-20 muestras adicionales por clase problemática.
+> **Nota (Nivel A3):** como el proyecto se comprometió a reentrenar el modelo con datos nuevos tras la primera prueba (Plantilla 1, Sección 3.4), el equipo debe planificar una **segunda ronda de recolección** después de la Semana 8-9, enfocada en los casos donde el primer modelo se equivoque (por ejemplo, confusión entre timbre y ruido de fondo). Esta segunda ronda no necesita ser tan grande como la primera — basta con ~15-20 muestras adicionales por clase problemática.
 
 **Revisión de fuga de datos (obligatoria):**
 
