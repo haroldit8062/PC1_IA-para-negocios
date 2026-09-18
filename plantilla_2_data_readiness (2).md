@@ -188,8 +188,6 @@ grabaciones propias del equipo, que no tienen restricción de licencia.
 | ¿Se revisó variable por variable que no haya fuga de datos? | SÍ |
 | ¿Están inventariadas las herramientas del agente, si el producto tiene una? | N/A — el producto no usa agente |
 
-> **Nota:** este checklist queda en estado "casi listo" — el diseño y las fuentes están verificados, pero falta completar la ejecución (recolectar las muestras reales) antes de la entrega de Semana 6. Esto debe resolverse esta misma semana.
+
 
 ---
-
-*Framework PROMPT v2.0 — AD5018 UTEC | Plantilla 2 de 4*
