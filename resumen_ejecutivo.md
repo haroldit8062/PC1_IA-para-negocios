@@ -21,8 +21,6 @@ Para estructurar la propuesta en PC1 se utilizará un **baseline académico prov
 
 Estos valores son provisionales y deberán sustituirse por resultados reales cuando se realice la validación.
 
-> **Nota de alcance:** tras recibir feedback del docente, el equipo redujo el proyecto de 5 categorías de sonido a **2 clases**, priorizando profundidad en el escenario de mayor riesgo de vida (alarma de incendio) en lugar de amplitud en varias categorías. Asimismo, se cambió el canal de entrega de una interfaz visual propia a **notificaciones por Telegram/WhatsApp**.
-
 ---
 
 ## Solución propuesta
@@ -136,5 +134,3 @@ En la Semana 5, el proyecto ya cuenta con:
 Antes de la PC1 se debe cerrar la recolección real de audios, documentar licencias, definir e implementar el bot de notificaciones, verificar técnicamente el stack y consolidar el cronograma y la presentación.
 
 ---
-
-*Framework PROMPT v2.0 — AD5018 Inteligencia Artificial para Negocios*
