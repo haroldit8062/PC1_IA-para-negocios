@@ -32,7 +32,7 @@
 - [ ] **G3/G4** Agente con herramientas
 - [ ] Memoria de sesión
 
-> **Justificación:** el conocimiento que necesita el componente generativo ahora es aún más pequeño que antes: solo **2 categorías** (alarma_incendio / ruido_de_fondo), cada una con un mensaje predefinido. No cambia con frecuencia ni requiere buscar en documentos externos, por lo que G1 (prompt con contexto fijo) sigue siendo la opción correcta — no se necesita RAG ni agente.
+> **Justificación:** el conocimiento que necesita el componente generativo consta de **2 categorías** (alarma_incendio / ruido_de_fondo), cada una con un mensaje predefinido. No cambia con frecuencia ni requiere buscar en documentos externos, por lo que G1 (prompt con contexto fijo) sigue siendo la opción correcta.
 
 **Si el nivel es G2 (RAG):** No aplica.
 
