@@ -44,7 +44,7 @@ El proyecto combina:
 
 ## 4. Problema
 
-Las personas con discapacidad auditiva que permanecen solas en el hogar tienen dificultad para identificar oportunamente una alarma de incendio o detector de humo activado —debido a su acceso limitado o nulo al canal auditivo—, lo que incrementa la posibilidad de no reaccionar a tiempo ante una situación de riesgo real y reduce su seguridad y autonomía.
+Las personas con discapacidad auditiva que permanecen solas en el hogar tienen dificultad para identificar oportunamente una alarma de incendio o detector de humo activado, debido a su acceso limitado o nulo al canal auditivo, lo que incrementa la posibilidad de no reaccionar a tiempo ante una situación de riesgo real y reduce su seguridad y autonomía.
 
 ---
 
@@ -328,5 +328,3 @@ El stack deberá ser verificado mediante una prueba técnica antes de considerar
 - `presentacion_pc1.pdf` — sustentación de la propuesta
 
 ---
-
-**Estado actual:** Preparación de PC1 — Semana 5 (v2, alcance de 2 clases).
