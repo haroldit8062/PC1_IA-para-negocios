@@ -5,56 +5,56 @@
 ---
 
 **Equipo:**
-- Integrante 1: Diego Requena Falero
-- Integrante 2: Harold Inca Tenorio
-- Integrante 3: Jeniffer Patiño Landa
+- Integrante 1: Harold Inca
+- Integrante 2: Diego Requena
+- Integrante 3: Jennifer Patiño
 
-**Fecha de entrega:** _______________
-**Versión del canvas:** v2
+**Fecha de entrega:** 18/09/2026
+**Versión del canvas:** v2 (alcance ajustado según feedback docente)
 
 ---
 
 ## SECCIÓN 1 — Definición del problema
 
 ### 1.1 Usuario afectado
-```
-Personas con discapacidad auditiva (sordera total o parcial) que pasan
-tiempo solas en su hogar o en espacios cotidianos, sin otra persona
-oyente cerca que pueda alertarles de sonidos importantes de su entorno.
-```
+
+Personas con discapacidad auditiva (sordera total o parcial) que pasan tiempo solas en su hogar, especialmente en situaciones donde no hay otra persona oyente cerca que pueda advertirles sobre sonidos críticos de seguridad en su entorno.
 
 ### 1.2 Problema específico
-```
-Estas personas no pueden percibir sonidos críticos de su entorno, como
-una alarma de incendio, el timbre de la puerta o la bocina de un
-vehículo acercándose. Esto les impide reaccionar a tiempo ante
-situaciones de riesgo o enterarse de eventos cotidianos relevantes.
-```
+
+Estas personas pueden no percibir oportunamente una **alarma de incendio o detector de humo activado** en su vivienda. Al no contar con el canal auditivo, pueden no enterarse de una situación de riesgo real hasta que sea demasiado tarde para reaccionar con seguridad.
+
+> **Nota de alcance (ajuste tras feedback docente):** el proyecto originalmente contemplaba 5 categorías de sonido (alarma, detector de humo, timbre, bocina, ruido de fondo). Tras recibir retroalimentación del profesor, el equipo decidió **reducir el alcance a una sola categoría crítica — la alarma de incendio / detector de humo —** frente a ruido de fondo, priorizando profundidad y calidad sobre amplitud. Se eligió este sonido porque representa el mayor riesgo de vida dentro de los escenarios cotidianos evaluados, y porque su patrón acústico es más estandarizado entre dispositivos, lo que permite lograr un clasificador confiable con un volumen de datos manejable para el curso.
 
 ### 1.3 Causa raíz
-```
-La causa raíz es la ausencia de un canal auditivo funcional, combinada
-con la falta de sistemas accesibles que traduzcan sonidos ambientales
-específicos en señales visuales o de texto de forma automática y en
-tiempo real.
-```
+
+La causa raíz es que una alarma de incendio o detector de humo se comunica exclusivamente mediante una señal acústica, mientras que el usuario tiene acceso limitado o nulo a ese canal sensorial. Como consecuencia, una alerta de seguridad crítica puede no ser percibida en el momento en que ocurre.
 
 ### 1.4 Consecuencia medible
-```
-Sin una solución, la persona queda expuesta a riesgos de seguridad
-reales (no percibir una alarma de incendio o un vehículo acercándose)
-y pierde autonomía, dependiendo de terceros o de dispositivos genéricos
-que no distinguen sonidos relevantes de irrelevantes.
-```
+
+Una persona con discapacidad auditiva puede no identificar oportunamente una alarma de incendio real, lo que incrementa el riesgo de no reaccionar a tiempo ante una situación de peligro y reduce su autonomía y seguridad dentro del hogar.
+
+Para esta propuesta académica se trabajará con un **baseline provisional** que permitirá estructurar la PC1:
+
+- **Identificación correcta sin apoyo del MVP: 40 %.**
+- **Tiempo promedio de reacción: 6 segundos.**
+
+Estos valores se consideran **estimaciones académicas provisionales**, no resultados de una prueba real. La validación posterior del MVP se realizará con una muestra pequeña y manejable para el curso:
+
+- **5 usuarios**;
+- **10 eventos por usuario**;
+- **50 observaciones de prueba en total**.
+
+Los indicadores principales serán:
+
+1. porcentaje de alarmas de incendio identificadas correctamente;
+2. tiempo promedio desde que ocurre el sonido hasta que el usuario recibe la notificación.
+
+> **Aclaración:** las muestras de audio mencionadas en el proyecto corresponden a audios de entrenamiento del modelo, no a personas participantes.
 
 ### 1.5 Declaración del problema — formato obligatorio
-```
-Las personas con discapacidad auditiva tienen dificultad para percibir
-sonidos críticos de su entorno (alarma, detector de humo, timbre,
-bocina) porque no cuentan con un sistema que traduzca estos sonidos
-específicos en alertas de texto o visuales en tiempo real, lo que
-genera riesgos de seguridad y pérdida de autonomía en su vida diaria.
-```
+
+Las personas con discapacidad auditiva que permanecen solas en el hogar tienen dificultad para identificar oportunamente una alarma de incendio o detector de humo activado —debido a su acceso limitado o nulo al canal auditivo—, lo que incrementa la posibilidad de no reaccionar a tiempo ante una situación de riesgo real y reduce su seguridad y autonomía.
 
 ---
 
@@ -62,150 +62,78 @@ genera riesgos de seguridad y pérdida de autonomía en su vida diaria.
 
 | Pregunta | SÍ/NO | Justificación |
 |---|---|---|
-| ¿Una hoja de cálculo o un formulario resuelve esto? | NO | Se necesita reconocer audio en tiempo real, no datos estructurados manuales. |
-| ¿El problema escala con el volumen de datos o usuarios? | SÍ | Más muestras de sonido mejoran la precisión, y el problema aplica a cualquier persona con discapacidad auditiva. |
-| ¿Hay un patrón repetitivo que un humano reconoce pero tarda en procesar? | SÍ | Los sonidos tienen patrones acústicos específicos, pero el usuario no puede "reconocerlos" al no poder oírlos. |
-| ¿El problema requiere generar contenido, responder preguntas o razonar en lenguaje natural? | SÍ | Se necesita traducir la clase detectada en un mensaje de texto claro y entendible. |
-| ¿Necesitas tanto predecir como explicar, comunicar o actuar? | SÍ | Se predice la categoría de sonido y luego se comunica como alerta al usuario. |
+| ¿Una hoja de cálculo o un formulario resuelve esto? | NO | El problema exige reconocer un patrón acústico capturado por un micrófono en tiempo real. |
+| ¿El problema escala con el volumen de datos o usuarios? | SÍ | El desempeño del clasificador puede mejorar al incorporar más ejemplos y mayor diversidad de condiciones (distintos modelos de alarma, distancias, ruido ambiental). |
+| ¿Hay un patrón repetitivo que un humano reconoce pero tarda en procesar? | SÍ | La alarma de incendio presenta un patrón acústico consistente y diferenciable del ruido de fondo. |
+| ¿El problema requiere generar contenido, responder preguntas o razonar en lenguaje natural? | SÍ, de forma acotada | El resultado del clasificador debe convertirse en un mensaje de alerta claro enviado por notificación (Telegram/WhatsApp). |
+| ¿Necesitas tanto predecir como explicar, comunicar o actuar? | SÍ | El componente analítico clasifica el sonido y el componente generativo redacta y envía la notificación al usuario. |
 
 ---
-**¿Qué va a predecir, clasificar o agrupar?**
-
-> ¿Por qué la IA es la respuesta correcta y no otra solución más simple?
-```
-La IA es necesaria porque el problema implica reconocer patrones
-acústicos variables (distinto volumen, tono o entorno) que no pueden
-cubrirse con reglas fijas tipo "si el sonido supera tantos decibeles".
-Además, se necesita una capa de lenguaje que traduzca ese resultado
-técnico en un mensaje entendible para el usuario, algo que una hoja de
-cálculo o un sistema de reglas simples no puede ofrecer por sí solo.
-```
 
 ## SECCIÓN 3 — Los dos componentes del producto
 
-> Todo producto de este curso tiene dos componentes. Uno analítico, que aprende de datos y predice o agrupa. Uno generativo, que trabaja con lenguaje y hace el producto usable.
+### 3.1 Componente analítico
 
-### 3.1 Componente analítico — qué va a aprender el modelo
+**Tarea:** Clasificación binaria.
 
-**¿Qué va a predecir, clasificar o agrupar?**
+**Clases:**
+- alarma_incendio (incluye detector de humo)
+- ruido_de_fondo
+
+**Nivel:** **A3**
+
+El modelo se entrenará en una primera versión, se evaluará su desempeño (matriz de confusión, recall), se recolectarán nuevos datos en las condiciones donde falle más y luego se reentrenará para comparar la mejora. Al trabajar con solo 2 clases, el equipo puede invertir ese esfuerzo de reentrenamiento en profundidad real —más variantes de alarmas, más condiciones de ruido— en vez de dispersarlo entre múltiples categorías.
+
+### 3.2 Componente generativo
+
+**Nivel:** **G1**
+
+La capa de lenguaje recibe:
+- clase predicha (alarma_incendio / ruido_de_fondo);
+- score de confianza;
+- nivel de criticidad.
+
+Con esa información genera un mensaje breve y claro, enviado como **notificación por Telegram/WhatsApp**:
+- Si detecta alarma_incendio con confianza suficiente → alerta de seguridad.
+- Si detecta ruido_de_fondo (o confianza insuficiente) → mensaje tranquilizador confirmando que no hay ninguna alarma activa, para que el usuario no quede con incertidumbre sobre si el sistema sigue funcionando.
+
+### 3.3 Patrón de conexión
+
+**Patrón 1 — Modelo → lenguaje**
+
+```text
+Audio → Clasificador (2 clases) → Clase + score → Criticidad/umbral → G1 → Notificación (Telegram/WhatsApp)
 ```
-La categoría de sonido detectado en un fragmento de audio captado por
-el micrófono: alarma, detector_humo, timbre, bocina, o ruido_de_fondo
-(ausencia de sonido relevante).
-```
-
-**Tipo de tarea:**
-- [X] Clasificación — decidir entre categorías
-- [ ] Regresión
-- [ ] Agrupamiento
-
-**Nivel de profundidad elegido:**
-- [ ] A1 — Un modelo entrenado, con baseline y métrica interpretada en negocio *(piso mínimo)*
-- [ ] A2 — Además, compara modelos y ajusta el umbral según el costo del error
-- [X] **A3** — Además, combina agrupamiento y predicción, **o reentrena con datos nuevos y mide la mejora**
-
-> *Cómo se cumple A3:* tras la primera versión entrenada y probada (Semana 8-9), el equipo recolecta audio adicional en las condiciones donde el modelo falle (por ejemplo, confusión entre timbre y ruido de fondo), reentrena el modelo, y mide la mejora comparando recall/precisión de la versión 1 contra la versión 2, especialmente en las clases de seguridad crítica (alarma, detector_humo).
-
----
-
-### 3.2 Componente generativo — qué va a hacer la capa de lenguaje
-
-**¿Qué comunica, decide o ejecuta?**
-```
-Traduce la clase de sonido detectada y su nivel de confianza en un
-mensaje de alerta claro para el usuario (ej. "Alarma de incendio
-detectada" o "No se detectó ningún sonido relevante"). No decide
-acciones ni consulta información externa — solo redacta el mensaje
-según una tabla fija de 5 categorías ya definida por el equipo.
-```
-
-**Nivel de profundidad elegido:**
-- [X] **G1** — Prompt con contexto fijo: la IA responde con la información que el equipo le escribió
-- [ ] G2 — RAG
-- [ ] G3 — Agente con herramientas
-- [ ] G4 — Agente con automatizaciones
-
----
-
-### 3.3 Cómo se conectan — patrón elegido
-
-- [X] **Patrón 1 — Modelo → lenguaje.** El modelo predice, la capa generativa explica o redacta
-- [ ] Patrón 2 — Lenguaje → modelo
-- [ ] Patrón 3 — Modelo como herramienta del agente
-
-**¿Qué dato exactamente viaja de un componente al otro?**
-```
-El modelo de audio (Teachable Machine) devuelve la clase predicha (ej.
-"alarma") y su score de confianza (ej. 0.91). Ambos valores se insertan
-en el prompt de la capa generativa, que los usa para elegir el mensaje
-de alerta correspondiente o, si el score está bajo el umbral definido
-para esa clase, responder con un mensaje de "no estoy seguro".
-```
-
----
 
 ### 3.4 Dónde va la ambición del equipo
 
-> *Regla de alcance: profundidad en un eje, piso en el otro. Ir a fondo en los dos no da más nota — da un proyecto sin terminar.*
+- [X] **Profundidad en A3 y piso en G1**
 
-- [ ] Vamos a fondo en el componente generativo (G3 o G4) y mantenemos el analítico en A1
-- [X] **Vamos a fondo en el componente analítico (A3) y mantenemos el generativo en G1**
-- [ ] Nos quedamos en un punto intermedio en ambos (A2 + G2)
+La prioridad es mejorar la confiabilidad de la detección de la alarma de incendio. Un falso negativo (no detectar una alarma real) es el error más costoso posible en este producto, mucho más grave que una notificación redactada con poca sofisticación. Reducir el alcance a 2 clases permite dedicar el esfuerzo de recolección y reentrenamiento a que esa única detección crítica sea lo más confiable posible.
 
-**¿Por qué esa elección?**
-```
-El problema es de seguridad: un falso negativo en "alarma" o
-"detector_humo" puede tener consecuencias graves para el usuario. Por
-eso conviene invertir el esfuerzo del equipo en mejorar la precisión
-del modelo (iterar con datos reales, ajustar y reentrenar) más que en
-construir una capa de lenguaje compleja. El mensaje de alerta que debe
-comunicarse es simple y fijo (5 categorías, 5 mensajes), por lo que un
-prompt con contexto fijo (G1) ya cubre la necesidad sin agregar
-complejidad innecesaria.
-```
+### 3.5 Métricas principales
 
-**3.5 Justificación general**
-```
-Estos dos niveles son la respuesta correcta para el problema porque la
-prioridad del usuario (una persona con discapacidad auditiva) es que el
-sistema detecte con la mayor confiabilidad posible los sonidos de
-seguridad crítica — un error ahí cuesta mucho más que un mensaje de
-alerta poco elaborado. Por eso el componente analítico necesita
-profundidad (A3: iterar y reentrenar con datos reales tras la primera
-prueba), mientras que el componente generativo puede resolverse con un
-diseño simple y fijo (G1), ya que no hay ambigüedad ni necesidad de
-consultar información externa para redactar la alerta. Esta
-combinación es también la más realista dado el tiempo disponible del
-equipo para el semestre.
-```
+- recall de la clase alarma_incendio (métrica prioritaria);
+- precision de la clase alarma_incendio;
+- accuracy global;
+- matriz de confusión (2×2);
+- porcentaje de alarmas identificadas correctamente;
+- tiempo de reacción / tiempo hasta la notificación.
+
+### 3.6 Solo si el equipo solicita excepción
+
+No aplica. El equipo sí entrenará un modelo de clasificación de audio.
 
 ---
 
-### 3.6 Solo si el equipo solicita la excepción
+## SECCIÓN 4 — Autoevaluación
 
-- [ ] Solicitamos excepción al componente analítico
-
-```
-No aplica — el equipo sí entrena un modelo (clasificador de audio en
-Teachable Machine), por lo que no se solicita la excepción de IA de
-relleno.
-```
-
----
-
-## SECCIÓN 4 — Autoevaluación del equipo
-
-| Pregunta de control | Respuesta |
+| Pregunta | Respuesta |
 |---|---|
-| ¿El problema está descrito sin mencionar tecnología? | SÍ |
-| ¿La declaración del problema sigue el formato exacto? | SÍ |
-| ¿Los dos componentes están definidos con su nivel (A_ y G_)? | SÍ |
-| ¿El patrón de conexión está elegido y justificado? | SÍ |
-| ¿Está declarado con claridad en cuál de los dos ejes va la ambición? | SÍ |
-| ¿Todos los integrantes pueden explicar este canvas sin leerlo? | *(completar en equipo)* |
-
-> **Si alguna respuesta es NO → el canvas no está listo para entregar.**
-
----
-
-*Framework PROMPT v2.0 — AD5018 UTEC | Plantilla 1 de 4*
+| ¿El problema está descrito sin mencionar tecnología? | Sí |
+| ¿La consecuencia tiene indicadores medibles? | Sí |
+| ¿Los dos componentes están definidos? | Sí |
+| ¿El patrón de conexión está elegido? | Sí |
+| ¿Está clara la ambición del equipo? | Sí |
+| ¿Está diferenciada la cantidad de audios frente a la cantidad de usuarios? | Sí |
+| ¿Todos los integrantes pueden explicar el canvas? | Sí |
