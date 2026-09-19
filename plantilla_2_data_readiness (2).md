@@ -66,9 +66,7 @@ La categoría de sonido detectado en un fragmento de audio: alarma_incendio
 | Alarma de incendio | 50-70 (10 audios recolectados) |
 | Ruido de fondo | 60-80 (10 audios recolectados) |
 
-> **Nota:** al trabajar con solo 2 clases, el equipo puede apuntar a un volumen por clase **mayor** al mínimo de referencia (~50), ya que no hay que repartir el esfuerzo entre 5 categorías distintas. Esto debería traducirse en un modelo más robusto para el mismo tiempo de trabajo.
->
-> **Nota adicional (Nivel A3):** como el proyecto se comprometió a reentrenar el modelo con datos nuevos tras la primera prueba (Plantilla 1, Sección 3.4), el equipo debe planificar una **segunda ronda de recolección** después de la Semana 8-9, enfocada en los casos donde el primer modelo se equivoque (por ejemplo, ruidos domésticos agudos que se confundan con la alarma). Esta segunda ronda no necesita ser tan grande como la primera — basta con ~15-20 muestras adicionales.
+> **Nota:** al trabajar con solo 2 clases, el equipo puede apuntar a un volumen mayor. Como el proyecto se comprometió a reentrenar el modelo con datos nuevos tras la primera prueba (Plantilla 1, Sección 3.4), el equipo debe planificar una **segunda ronda de recolección** después de la Semana 8-9, enfocada en los casos donde el primer modelo se equivoque (por ejemplo, ruidos domésticos agudos que se confundan con la alarma). Esta segunda ronda no necesita ser tan grande como la primera — basta con ~15-20 muestras adicionales.
 
 **Revisión de fuga de datos (obligatoria):**
 
