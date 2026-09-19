@@ -20,8 +20,8 @@
 
 | # | Tipo de información | Dónde está actualmente | Formato | ¿Está disponible? |
 |---|---|---|---|---|
-| 1 | Mapeo sonido detectado → texto de alerta ("Alarma de incendio detectada") | Se define por el equipo, no existe aún como documento | Tabla / JSON de configuración | PARCIAL — hay que redactarlo |
-| 2 | Mapeo ausencia de alarma → mensaje tranquilizador ("No se detecta ninguna alarma, todo tranquilo") | Se define por el equipo | Tabla / JSON de configuración | PARCIAL — hay que redactarlo |
+| 1 | Mapeo sonido detectado → texto de alerta ("Alarma de incendio detectada") | Se define por el equipo, no existe aún como documento | Tabla / JSON de configuración | Parcial |
+| 2 | Mapeo ausencia de alarma → mensaje tranquilizador ("No se detecta ninguna alarma, todo tranquilo") | Se define por el equipo | Tabla / JSON de configuración | Parcial |
 | 3 | Texto del aviso de privacidad (uso de micrófono) | Ya redactado en sesiones previas del proyecto | Texto plano | SÍ |
 | 4 | Justificación del umbral de confianza por clase (costo del error) | Definido conceptualmente, falta formalizar | Documento de diseño | PARCIAL |
 | 5 | Instrucciones de uso para el usuario final (cómo vincular su cuenta de Telegram/WhatsApp al bot) | No existe aún | Texto plano / mensaje de bienvenida del bot | NO — pendiente de redactar |
