@@ -47,7 +47,6 @@
 | 1 | Audio de alarma de incendio / detector de humo | Freesound.org, Zapsplat, grabación propia | .mp3 / .wav | ~50-70 muestras (vía clips troceados por Teachable Machine) | SÍ (por carpeta/clase) |
 | 2 | Audio de ruido de fondo (clase obligatoria) | Grabación propia (conversación, calle, música, silencio, televisión) | .mp3 / .wav o grabación directa en Teachable Machine | ~60-80 muestras (la más variada, para evitar falsos positivos) | SÍ |
 
-> **Nota sobre el cambio de alcance:** tras el feedback del docente, el equipo redujo el proyecto de 5 clases a **2 clases**, priorizando profundidad en el escenario de mayor riesgo (alarma de incendio) en lugar de amplitud en varias categorías. Esto permite concentrar todo el esfuerzo de recolección en pocas clases, con más variedad de condiciones dentro de cada una (distintos modelos de alarma, distintas distancias al micrófono, distintos tipos de ruido de fondo).
 
 **Variable objetivo (target):**
 ```
