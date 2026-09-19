@@ -140,8 +140,8 @@ Teachable Machine trocea automáticamente en múltiples muestras. Al ser
 solo 2 clases, priorizar variedad dentro de cada una (distintos
 modelos de alarma; ruido de fondo con conversación, calle, TV, música,
 silencio).
-Responsable dentro del equipo: [Nombre integrante]
-Fecha límite de resolución: [Fecha, dentro de Semana 7]
+Responsable dentro del equipo: Harold Inca Tenorio
+Fecha límite de resolución: semana 7-26/09
 ¿Qué pasa si no se resuelve? (Plan B): Entrenar una primera versión
 con el volumen disponible aunque sea menor al ideal, documentar el
 recall obtenido, y usar esos resultados para priorizar qué grabar en
@@ -156,8 +156,8 @@ descargado de bancos de sonido; algunos requieren atribución.
 Acción concreta para resolverlo: Priorizar clips marcados como
 "Creative Commons 0" (sin atribución) y, si se usa un clip con
 atribución requerida, documentar la fuente en el README del proyecto.
-Responsable dentro del equipo: [Nombre integrante]
-Fecha límite de resolución: [Fecha, dentro de Semana 7]
+Responsable dentro del equipo: Diego Requena Falero
+Fecha límite de resolución: Semana 7-26/09
 ¿Qué pasa si no se resuelve? (Plan B): Sustituir esos clips por
 grabaciones propias del equipo, que no tienen restricción de licencia.
 ```
