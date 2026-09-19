@@ -24,7 +24,6 @@ Personas con discapacidad auditiva (sordera total o parcial) que pasan tiempo so
 
 Estas personas pueden no percibir oportunamente una **alarma de incendio o detector de humo activado** en su vivienda. Al no contar con el canal auditivo, pueden no enterarse de una situación de riesgo real hasta que sea demasiado tarde para reaccionar con seguridad.
 
-> **Nota de alcance (ajuste tras feedback docente):** el proyecto originalmente contemplaba 5 categorías de sonido (alarma, detector de humo, timbre, bocina, ruido de fondo). Tras recibir retroalimentación del profesor, el equipo decidió **reducir el alcance a una sola categoría crítica — la alarma de incendio / detector de humo —** frente a ruido de fondo, priorizando profundidad y calidad sobre amplitud. Se eligió este sonido porque representa el mayor riesgo de vida dentro de los escenarios cotidianos evaluados, y porque su patrón acústico es más estandarizado entre dispositivos, lo que permite lograr un clasificador confiable con un volumen de datos manejable para el curso.
 
 ### 1.3 Causa raíz
 
@@ -54,7 +53,7 @@ Los indicadores principales serán:
 
 ### 1.5 Declaración del problema — formato obligatorio
 
-Las personas con discapacidad auditiva que permanecen solas en el hogar tienen dificultad para identificar oportunamente una alarma de incendio o detector de humo activado —debido a su acceso limitado o nulo al canal auditivo—, lo que incrementa la posibilidad de no reaccionar a tiempo ante una situación de riesgo real y reduce su seguridad y autonomía.
+Las personas con discapacidad auditiva que permanecen solas en el hogar tienen dificultad para identificar oportunamente una alarma de incendio o detector de humo activado, debido a su acceso limitado o nulo al canal auditivo, lo que incrementa la posibilidad de no reaccionar a tiempo ante una situación de riesgo real y reduce su seguridad y autonomía.
 
 ---
 
