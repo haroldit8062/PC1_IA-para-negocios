@@ -63,8 +63,8 @@ La categoría de sonido detectado en un fragmento de audio: alarma_incendio
 
 | Categoría que se quiere distinguir | N° de casos disponibles |
 |---|---|
-| Alarma de incendio | ~50-70 (pendiente de completar, ver Sección 3) |
-| Ruido de fondo | ~60-80 (pendiente de completar) |
+| Alarma de incendio | 50-70 (10 audios recolectados) |
+| Ruido de fondo | 60-80 (10 audios recolectados) |
 
 > **Nota:** al trabajar con solo 2 clases, el equipo puede apuntar a un volumen por clase **mayor** al mínimo de referencia (~50), ya que no hay que repartir el esfuerzo entre 5 categorías distintas. Esto debería traducirse en un modelo más robusto para el mismo tiempo de trabajo.
 >
